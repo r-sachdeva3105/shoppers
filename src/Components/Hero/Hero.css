@@ -2,6 +2,7 @@
     height: 88vh;
     background: linear-gradient(180deg, #FFE53B, #ffffff 90%);
     display: flex;
+    width: 100%;
 }
 
 .left {
@@ -56,6 +57,11 @@ img.hand {
     }
 }
 
+.latest a {
+    background-color: #ff4141;
+    color: #ffffff;
+}
+
 .right {
     flex: 1;
     display: flex;
@@ -65,4 +71,45 @@ img.hand {
 
 .right img {
     width: 500px
+}
+
+@media screen and (max-device-width: 500px) {
+    .hero {
+        width: 100%;
+        display: block;
+    }
+
+    .left {
+        margin-left: 20px;
+        padding-top: 20px;
+    }
+
+    .left h2 {
+        font-size: 18px;
+    }
+
+    .left>p,
+    .left span {
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    img.hand {
+        width: 50px;
+    }
+
+    .latest {
+        width: 200px;
+        height: 50px;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .right {
+        margin-top: 40px;
+    }
+
+    .right img {
+        width: 250px
+    }
 }

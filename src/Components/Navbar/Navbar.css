@@ -95,3 +95,13 @@ button:hover a {
     background-color: #FF4141;
     color: #FFFFFF;
 }
+
+@media screen and (max-device-width: 500px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    .logo p {
+        font-size: 20px;
+    }
+}
